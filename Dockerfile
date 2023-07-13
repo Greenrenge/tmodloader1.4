@@ -151,7 +151,7 @@ RUN chown -R terraria:terraria /home/terraria \
 USER terraria
 
 RUN ./LaunchUtils/DotNetInstall.sh
-RUN mkdir -p $HOME/.local/share/Terraria/tModLoader/Worlds \
-    && mkdir -p $HOME/.local/share/Terraria/tModLoader/Mods
+RUN mkdir -p $HOME/.local/share/Terraria/tModLoader-preview/Worlds \
+    && mkdir -p $HOME/.local/share/Terraria/tModLoader-preview/Mods
 
 ENTRYPOINT ["./entrypoint.sh"]

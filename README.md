@@ -68,7 +68,7 @@ export TMOD_WORLDS=/path/to/worlds/directory
 Then you will need to specify your TMOD_WORLDS variable when running the container, like the following example.
 
 ```bash
--v $TMOD_WORLDS:/home/terraria/.local/share/Terraria/tModLoader/Worlds
+-v $TMOD_WORLDS:/home/terraria/.local/share/Terraria/tModLoader-preview/Worlds
 ```
 
 _You can omit this, though the worlds will not be saved after your container shuts down! You have been warned._
@@ -204,7 +204,7 @@ docker pull jacobsmile/tmodloader1.4:latest
 
 # Execute the container
 docker run -p 7777:7777 --name tmodloader --rm \
-  -v $TMOD_WORLDS:/home/terraria/.local/share/Terraria/tModLoader/Worlds \
+  -v $TMOD_WORLDS:/home/terraria/.local/share/Terraria/tModLoader-preview/Worlds \
   -v $TMOD_WORKSHOP:/home/terraria/terraria-server/workshop-mods \
   -e TMOD_SHUTDOWN_MESSAGE='Goodbye!' \
   -e TMOD_AUTOSAVE_INTERVAL='15' \

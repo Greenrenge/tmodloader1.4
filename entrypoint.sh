@@ -59,7 +59,7 @@ else
 fi
 
 # Enable Mods
-enabledpath=$HOME/.local/share/Terraria/tModLoader/Mods/enabled.json
+enabledpath=$HOME/.local/share/Terraria/tModLoader-preview/Mods/enabled.json
 modpath=$HOME/terraria-server/workshop-mods/steamapps/workshop/content/1281930
 rm -f $enabledpath
 
